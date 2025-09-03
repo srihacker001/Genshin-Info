@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact Powers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 680vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(108, 193, 43, 0.1);
+            animation: fadeInUp 1.5s ease-out;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #333;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards 0.5s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            color: #666;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-out forwards 1s;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            opacity: 0;
+            animation: fadeInUp 1.5s ease-out forwards 1.5s;
+        }
+
+        .btn:hover {
+            background-color: #d7fa2a;
+        }
+
+        .power-section {
+            margin-top: 40px;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .power-section h2 {
+            font-size: 28px;
+            color: #ff5900;
+            margin-bottom: 10px;
+        }
+        .power-section h3 {
+            font-size: 28px;
+            color: #017ce7;
+            margin-bottom: 10px;
+        }
+        .power-section h4 {
+            font-size: 28px;
+            color: #00ffea;
+            margin-bottom: 10px;
+        }
+        .power-section h5 {
+            font-size: 28px;
+            color: #b700ff;
+            margin-bottom: 10px;
+        }
+        .power-section h6 {
+            font-size: 28px;
+            color: #0aa302;
+            margin-bottom: 10px;
+        }
+        .power-section h7 {
+            font-size: 28px;
+            color: #fcd615;
+            margin-bottom: 10px;
+        }
+        .power-section h8 {
+            font-size: 28px;
+            color: #6feafc;
+            margin-bottom: 10px;
+        }
+
+        .power-section p {
+            margin-bottom: 15px;
+        }
+
+        .power-section img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Fix for animation issue on headings */
+        .power-section h2 {
+            opacity: 1;
+            animation: fadeIn 2s ease-out forwards;
+        }
+        /* Button style and animation */
+.btn1 {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0612fe;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards 1.5s;
+}
+
+.btn1:hover {
+    background-color: #fb4700;
+    transform: scale(1.1); /* Button grows slightly on hover */
+}
+.btn2 {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #060efe;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards 1.5s;
+}
+
+.btn2:hover {
+    background-color: #0a92f3;
+    transform: scale(1.1); /* Button grows slightly on hover */
+}
+.btn3 {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #060efe;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards 1.5s;
+}
+
+.btn3:hover {
+    background-color: #12f5bd;
+    transform: scale(1.1); /* Button grows slightly on hover */
+}
+.btn4 {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #060efe;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards 1.5s;
+}
+
+.btn4:hover {
+    background-color: #d91cff;
+    transform: scale(1.1); /* Button grows slightly on hover */
+}
+.btn5 {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #060efe;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards 1.5s;
+}
+
+.btn5:hover {
+    background-color: #0af35c;
+    transform: scale(1.1); /* Button grows slightly on hover */
+}
+.btn6 {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #060efe;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards 1.5s;
+}
+
+.btn6:hover {
+    background-color: #e8c204;
+    transform: scale(1.1); /* Button grows slightly on hover */
+}
+.btn7 {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #060efe;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards 1.5s;
+}
+
+.btn7:hover {
+    background-color: #4cb9f3;
+    transform: scale(1.1); /* Button grows slightly on hover */
+}
+
+/* Fade-in animation for the button */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+       
+     
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Genshin Impact: Powers</h1>
+        <p>In Genshin Impact, characters wield the power of various elements. Each elemental power has unique abilities and can be used to create powerful elemental reactions in combat.</p>
+
+        <!-- Powers Section -->
+        <div class="power-section">
+            <h2>Pyro (Fire)</h2>
+            <p>Pyro characters wield the power of fire, dealing damage over time and igniting enemies. Fire attacks can trigger elemental reactions like Burning, Vaporize, and Melt.</p>
+            <p><strong>Example Characters: </strong>Diluc, Klee, Xiangling</p>
+            <!-- Image for Pyro -->
+            <img src="images/Element_Pyro.webp" alt="Pyro Elemental Power">
+            <a href="Pyro Archon.html" class="btn1">Pyro Archon</a>
+            
+        </div>
+
+        <div class="power-section">
+            <h3>Hydro (Water)</h3>
+            <p>Hydro characters control water and can inflict the Wet status on enemies. Hydro attacks are effective for triggering reactions such as Electro-Charged, Vaporize, and Frozen.</p>
+            <p><strong>Example Characters: </strong>Barbara, Xingqiu, Mona</p>
+            <!-- Image for Hydro -->
+            <img src="images/hydro.webp" alt="Hydro Elemental Power">
+            <a href="Hydro Archon.html" class="btn2">Hydro Archon</a>
+        </div>
+
+        <div class="power-section">
+            <h4>Anemo (Wind)</h4>
+            <p>Anemo characters manipulate wind to create swirling effects, increasing movement speed and spreading elemental effects. Anemo can trigger reactions such as Swirl.</p>
+            <p><strong>Example Characters: </strong>Sucrose, Venti, Jean</p>
+            <!-- Image for Anemo -->
+            <img src="images/anemo.webp" alt="Anemo Elemental Power">
+            <a href="Anemo Archon.html" class="btn3">Anemo Archon</a>
+        </div>
+
+        <div class="power-section">
+            <h5>Electro (Electric)</h5>
+            <p>Electro characters use electricity to deal damage and can trigger reactions like Electro-Charged, Overloaded, and Superconduct.</p>
+            <p><strong>Example Characters: </strong>Lisa, Razor, Beidou</p>
+            <!-- Image for Electro -->
+            <img src="images/electro.webp" alt="Electro Elemental Power">
+            <a href="Electro Archon.html" class="btn4">Electro Archon</a>
+        </div>
+
+        <div class="power-section">
+            <h6>Dendro (Nature)</h6>
+            <p>Dendro is the elemental power of nature, associated with plants and nature’s vitality. Characters with Dendro power are still rare in the game, but they can create various elemental reactions in future updates.</p>
+            <p><strong>Example Characters: </strong>Nahida, Tighnari, Kinich, Kaveh</p>
+            <!-- Image for Dendro -->
+            <img src="images/665b6e51f9e5d0f97e2b41a1cfef100f.jpg" alt="Dendro Elemental Power">
+            <a href="Dendro Archon.html" class="btn5">Dendro Archon</a>
+        </div>
+
+        <div class="power-section">
+            <h7>Geo (Earth)</h7>
+            <p>Geo characters can manipulate the earth, creating shields and dealing damage with rocks and stone. The Geo element can trigger reactions like Crystallize and provide protection with shields.</p>
+            <p><strong>Example Characters: </strong>Zhongli, Noelle, Albedo</p>
+            <!-- Image for Geo -->
+            <img src="images/geo.webp" alt="Geo Elemental Power">
+            <a href="Geo Archon.html" class="btn6">Geo Archon</a>
+        </div>
+
+        <div class="power-section">
+            <h8>Cryo (Ice)</h8>
+            <p>Cryo characters control ice and can freeze enemies. Cryo attacks can create reactions such as Superconduct, Frozen, and Melt.</p>
+            <p><strong>Example Characters: </strong>Ayaka, Chongyun, Qiqi</p>
+            <!-- Image for Cryo -->
+            <img src="images/4b4d28fa8b9bff21ccc277fc3acf09d1.jpg" alt="Cryo Elemental Power">
+            <a href="Cryo archon.html" class="btn7">Cryo Archon</a>
+        </div>
+    </div>
+</body>
+</html>
