@@ -1,0 +1,92 @@
+strong {
+    color: #f7aa926b; /* Highlighted text in teal for Hydro Archon */
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    
+        background-image: url('1706404514923.jpeg'); /* Replace with your image file */
+        background-size: cover; /* Ensures the image covers the entire header */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents image repetition */
+        height: 750px; /* Adjust height as needed */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(176, 255, 247); /* Ensures text is visible on top of the image */
+        text-shadow: 2px 2px 4px rgba(150, 52, 52, 0.5);
+        font-size: 24px;
+
+    
+}
+
+/* Navigation Animation */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #0ef069;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+/* Slide-in Animation */
+.slide-in {
+    transform: translateY(50px);
+    opacity: 0;
+    animation: slideIn 1.5s ease-out forwards;
+}
+
+/* Button Styling with Animation */
+.btn {
+    background: #f0940b;
+    color: rgb(244, 241, 241);
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.btn:hover {
+    background: #5e29ba;
+    transform: scale(1.1);
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
