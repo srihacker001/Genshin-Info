@@ -13,7 +13,7 @@ body {
 /* Header Styling */
 header {
     
-        background-image: url('1706404514923.jpeg'); /* Replace with your image file */
+        background-image: url('images/1706404514923.jpeg'); /* Replace with your image file */
         background-size: cover; /* Ensures the image covers the entire header */
         background-position: center; /* Centers the image */
         background-repeat: no-repeat; /* Prevents image repetition */
